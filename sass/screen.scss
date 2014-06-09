@@ -4,4 +4,77 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+@include font-face("YanoneKaffeesatz-Regular", font-files("YanoneKaffeesatz-Regular.ttf", "YanoneKaffeesatz-Regular.otf"));
 
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	width: 100%;
+	background:url(../images/jellyfish_bg_static.jpg) #141517 center top no-repeat;
+	background-position:-85px 65px;
+}
+
+.wrapper {
+	width:960px;
+	margin:0 auto;
+}
+
+.header {
+	.top-line{
+		width:100%;
+		background:url(../images/toolbar_bg.png) repeat-x;
+		height:65px;
+		line-height:40px;
+	.center{
+		width:960px;
+		margin:0 auto;
+		form{
+			label{
+				color:#5A5C5E;
+				padding:0 10px 0 0;
+			}
+			input[type=text]{
+				color:#5A5C5E;
+				background:#141517;
+				border:1px solid #5A5C5E;
+				height:20px;
+			}
+		}
+	}
+	}
+}
+
+.content {
+	.logo{
+		margin:0 auto;
+		display:block;
+		padding:40px 0;
+	}
+	.menu{
+		list-style:none;
+		li{
+			float:left;
+			padding:0 20px 0 0;
+			font-family: "YanoneKaffeesatz-Regular";
+			letter-spacing: 0px; 
+			font-size:30px;
+			color:#fff;
+			text-transform:uppercase;
+			a{
+				color:#fff;
+				text-decoration:none;
+			}
+		}
+		li:last-child{
+			float:none;
+			padding:0;
+		}
+	}
+	
+}
+
+.footer {
+	height: 100px;
+	background: #BFF08E;
+}
